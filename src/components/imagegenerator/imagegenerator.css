@@ -1,0 +1,96 @@
+/* General styles */
+body {
+    display: flex;
+    flex-direction: column; /* Ensures vertical alignment of child elements */
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensures the body fills the viewport height */
+    margin: 0; /* Removes default body margin */
+    background-color: black;
+    color: white;
+}
+
+.ai-image-generator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; /* Centers horizontally */
+    gap: 30px;
+}
+
+.header {
+    margin-top: 50px;
+    font-size: 70px;
+    font-weight: 500;
+    /* padding-bottom: 30px; */
+    text-align: center; /* Ensures centered text */
+}
+
+.header span {
+    color: #DE1B89;
+    font-weight: 600;
+}
+
+.img-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures alignment */
+}
+
+.img-loading img {
+    width: 400px; /* Fixed width */
+    height: 400px; /* Fixed height */
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+    height: 60px;
+    border-radius: 50px;
+    background: #1F3540;
+}
+
+.search-input{
+    background: transparent;
+    width: 600px;
+    height: 50px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding-left: 35px;
+    margin-right: 35px;
+    outline: none;
+}
+
+.search-input::placeholder{
+    color: #999;
+}
+
+.generate-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 50px;
+    background: #DE1B89;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Line loading animation */
+.loading-line {
+    width: 50%;
+    height: 4px;
+    background: #3498db;
+    animation: load 2s infinite;
+}
+
+@keyframes load {
+    0% { width: 0%; }
+    50% { width: 50%; }
+    100% { width: 100%; }
+}
